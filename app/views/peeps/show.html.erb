@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<h1>The Peep 'show' page</h1>
+
+<p>
+  <strong>Name:</strong>
+  <%= @peep.name %>
+</p>
+
+<p>
+  <strong>Role:</strong>
+  <%= @peep.role %>
+</p>
+
+<%= link_to 'Edit', edit_peep_path(@peep) %> |
+<%= link_to 'Back', peeps_path %>

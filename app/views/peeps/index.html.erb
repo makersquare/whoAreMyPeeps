@@ -1,0 +1,29 @@
+<h1>Listing peeps (The Peeps Index)</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Role</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @peeps.each do |peep| %>
+      <tr>
+        <td><%= peep.name %></td>
+        <td><%= peep.role %></td>
+        <td><%= link_to 'Show', peep %></td>
+        <td><%= link_to 'Edit', edit_peep_path(peep) %></td>
+        <td><%= link_to 'Destroy', peep, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Peep', new_peep_path %>
