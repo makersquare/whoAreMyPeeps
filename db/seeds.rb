@@ -9,6 +9,6 @@
 
 Peep.create(name:"Sartaj",role:"Dj. Sir Taj in da club")
 
-Peep.create(name:"Elyse",role:"Sr. Global VP of Sass")
+Peep.create(name:"Elyse",role:"Sr. VP of Sass")
 
 Peep.create(name:"Alex",role:"Penguin Whisperer")
